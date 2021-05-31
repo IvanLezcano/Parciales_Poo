@@ -99,12 +99,12 @@ class Grog:
     def efecto(self):
         return self.efectoGrog 
 
-
+#heredar el grog? !!!!
 
 class GrogXD:
 
     def efectoGrogXD(self,persona):
-        persona.aumentarFuerza(pocion.ingredientes())
+        persona.aumentarFuerza(persona.fuerza*pocion.ingredientes())
         persona.aumentarResistencia(persona.resistencia*2)
         
         return None
